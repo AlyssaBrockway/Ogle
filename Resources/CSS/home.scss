@@ -1,6 +1,7 @@
 *{
     font-family: 'Delius', cursive;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin: 0px;
 }
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar-dates {
@@ -10,6 +11,7 @@
     bottom: 15vh;
     left: 0;
     width: 100%;
+    padding: 3vh 0vh;
   }
   
   /* Style the links inside the navigation bar */
@@ -26,3 +28,47 @@
 .navbar-dates a.active {
     color: #f18282;
   }
+
+.one{
+  width: 100%;
+  margin: 0px;
+  
+  .container{
+    width: 100%;
+    display: grid;
+    margin: 2vw;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1em auto 1em;
+    grid-template-areas: 'video title'
+                        'video description'
+                        'video rating';
+    .trailer{
+      grid-area: video;
+      width: 50vw;
+            
+    }
+    
+      
+      .title{
+        margin: 0px;
+        grid-area: title;
+      }
+      .discription{
+        width: 50%;
+        grid-area: description;
+      }
+    
+    
+  }
+  .times{
+    display: flex;
+    width: 100%;
+    background-color: #011638;
+    padding: 2vh 0vh;
+    p{
+      width: 20%;
+      text-align: center;
+      color: #f2f2f2;
+    }
+  }
+}  
