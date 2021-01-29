@@ -1,3 +1,9 @@
+* {
+  font-family: 'Delius', cursive;
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
   background-color: white;

@@ -1,0 +1,28 @@
+.one{
+    .trailer{
+        width: 100%;
+    }
+    .info{
+        margin: 1em;
+        h2{
+            font-size: 125%;
+        }
+        .times{
+            display: flex;
+            width: 100%;           
+            p{
+              width: 20%;
+              text-align: center;
+              color: #000000;
+            }
+          }
+          .book-btn{
+              display: block;
+              padding: 3vw;
+              margin: 1em;
+              background-color: #011638;
+              color: #eef0f2;
+              text-align: center;
+          }
+    }
+}
