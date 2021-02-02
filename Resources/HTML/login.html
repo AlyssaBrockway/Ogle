@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <title>Login</title>
 </head>
 <body>
+    <form id="login-holder">
+        <img id="logimg" src="../Images/Cinema booking.png" />
+        <div class="email-input">
+          <input type="email" placeholder="Username" id="login-email" required />
+        </div>
+        <div class="password-input">
+          <input type="password" placeholder="Password" id="login-password" required />
+        </div>
+        <button type="button " id="Login">Log in</button>
+      </form>
     
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+  <script src="../JS/firebase.js"></script>
+  <script src="../JS/login.js"></script>
 </body>
 </html>
