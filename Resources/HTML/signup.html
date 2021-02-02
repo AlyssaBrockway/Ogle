@@ -7,18 +7,18 @@
     <title>Login</title>
 </head>
 <body>
-    <form id="login-holder">
+    <form id="signup-holder">
         <img id="logimg" src="../Images/Cinema booking.png" />
-        <div class="email-input">
-          <input type="email" placeholder="Email" id="login-email" required />
+        <div class="email-input" type="string">
+          <input type="email" placeholder="Email" id="email" required />
         </div>
         <div class="password-input">
-          <input type="password" placeholder="Password" id="login-password" required />
+          <input type="password" placeholder="Password" id="password" required />
         </div>
+        <button type="button" id="signup">Sign up</button>
         
-        <button type="button " id="Login">Log in</button>
     </form>
-    <a href="./signup.html"><button type="button " id="signup">Sign up</button></a>
+
         
     <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
@@ -30,6 +30,6 @@
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
 
   <script src="../JS/firebase.js"></script>
-  <script src="../JS/login.js"></script>
+  <script src="../JS/signup.js"></script>
 </body>
 </html>
