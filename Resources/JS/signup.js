@@ -23,12 +23,3 @@ firebase.auth().createUserWithEmailAndPassword(email,password)
 
 
 
-/*function signup(){
-    var email = document.getElementById("signup-email");
-    var passowrd = document.getElementById("signup-password");
-
-    const promise = auth.createUserWithEmailAndPassword(email.value, passowrd.value);
-    promise.catch(e => alert(e.message));
-
-    alert("Signed up");
-}*/
