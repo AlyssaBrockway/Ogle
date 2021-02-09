@@ -1,23 +1,32 @@
-const email = document.querySelector("#email").value;
-const passowrd = document.querySelector("#password").value;
-console.log(email);
-console.log(passowrd);
+(function() {
+    const txtEmail = document.getElementById("email");
+    const txtPassword = document.getElementById("password");
+    const signup = document.getElementById("signup");
 
-firebase.auth().createUserWithEmailAndPassword(email,password)
-    .then ((userCredential) =>{
-        var user = userCredential.user;
-        const email = document.querySelector("#email").value;
-        const passowrd = document.querySelector("#password").value;
-        console.log(email);
-        console.log(passowrd);
+    //Add signup event
+    signup.addEventListener("click", e => {
+        //get email and pass
+        const email = txtEmail.value;
+        const pass = txtPassword.value;
+        const auth = firebase.auth();
+
+        const promise = auth.createUserWithEmailAndPassword(email, pass);
+        promise
+            .catch(e => console.log(e.message));
+        window.location.replace("home.html");
+    });
+
+    //Add a realtime listener
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+            console.log(firebaseUser);
+        } else {
+            console.log("not logged in");
+        }
     })
-    /*.catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ..
-      });*/
 
 
+}());
 
 
 
