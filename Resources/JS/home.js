@@ -1,6 +1,6 @@
-function data(){
+(function(){
     db.collection("movies").get.then(function (querysnapshot){
-        querysnapshot.forEach(async function(doc {
+        querysnapshot.forEach(async function(doc) {
             if (doc.id=="none") {}
             else{        
                 container = document.createElement("div");
@@ -15,6 +15,6 @@ function data(){
                 title.classList.add("title");
 
             }
-        }));
+        });
     });
-};
+});
