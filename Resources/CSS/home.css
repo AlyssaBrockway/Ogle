@@ -44,14 +44,14 @@
       grid-template-columns: 50vw 50vw;
   -ms-grid-rows: 1em auto 1em;
       grid-template-rows: 1em auto 1em;
-      grid-template-areas: 'video title' 'video description' 'video rating';
+      grid-template-areas: 'poster title' 'poster description' 'poster rating';
 }
 
-.one .container .trailer {
+.one .container .poster {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  grid-area: video;
+  grid-area: poster;
   width: 50vw;
 }
 
