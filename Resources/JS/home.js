@@ -21,9 +21,9 @@
 
                 description = document.createElement("p");
                 description.classList.add("description");
+                description.innerText = doc.data().title;
                 document.container.appendChild(description);
-                innerText = doc.data().title
-
+                
                 rating = document.createElement("p");
                 rating.classList.add("rating");
                 document.container.appendChild(rating);
@@ -39,4 +39,4 @@
             }
         });
     });
-});
+})();

@@ -1,29 +1,29 @@
-.one .trailer {
+.trailer {
   width: 100%;
 }
 
-.one .info {
+.info {
   margin: 1em;
 }
 
-.one .info h2 {
+.info h2 {
   font-size: 125%;
 }
 
-.one .info .times {
+.info .times {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.one .info .times p {
+.info .times p {
   width: 20%;
   text-align: center;
   color: #000000;
 }
 
-.one .info .book-btn {
+.info .book-btn {
   display: block;
   padding: 3vw;
   margin: 1em;
