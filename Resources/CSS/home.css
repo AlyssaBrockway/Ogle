@@ -30,24 +30,28 @@
   color: #f18282;
 }
 
-.one {
+.films {
+  margin-bottom: 24vh;
+}
+
+.section {
   width: 100%;
   margin: 0px;
 }
 
-.one .container {
+.section .container {
   width: 100%;
   display: -ms-grid;
   display: grid;
   margin: 2vw;
   -ms-grid-columns: 50vw 50vw;
       grid-template-columns: 50vw 50vw;
-  -ms-grid-rows: 1em auto 1em;
-      grid-template-rows: 1em auto 1em;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
       grid-template-areas: 'poster title' 'poster description' 'poster rating';
 }
 
-.one .container .poster {
+.section .container .poster {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -55,21 +59,21 @@
   width: 50vw;
 }
 
-.one .container .title {
+.section .container .title {
   margin: 0px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: title;
 }
 
-.one .container .discription {
+.section .container .discription {
   width: 50%;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: description;
 }
 
-.one .times {
+.section .times {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +82,7 @@
   padding: 2vh 0vh;
 }
 
-.one .times p {
+.section .times p {
   width: 20%;
   text-align: center;
   color: #f2f2f2;

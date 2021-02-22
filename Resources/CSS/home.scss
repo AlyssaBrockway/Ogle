@@ -29,7 +29,8 @@
     color: #f18282;
   }
 
-.one{
+.films{ margin-bottom: 24vh;}
+.section{
   width: 100%;
   margin: 0px;
   
@@ -38,7 +39,7 @@
     display: grid;
     margin: 2vw;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 1em auto 1em;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 'poster title'
                         'poster description'
                         'poster rating';
