@@ -11,6 +11,8 @@ async function addMovies(){
                             .getDownloadURL()
                             .then(async function (url) {
 
+                length = document.querySelector(".length1")
+                length.setAttribute(doc.data().length)                
 
                 section = document.createElement("div");
                 section.classList.add("section");
@@ -58,8 +60,15 @@ window.addEventListener("DOMContentLoaded", addMovies);
 function page(e){
     document.querySelector("#films").style.display = "none"
     document.querySelector("#info").style.display = "grid"
-    console.log(e)
+    
     info = document.querySelector("#info")
-    info.querySelector(".title1").innerText = e.querySelector("#title").innerText
-    console.log(e)
+    info.querySelector(".title1").innerText = e.querySelector(".title").innerText
+    
+    info.querySelector(".description1").innerText = e.querySelector(".description").innerText
+    
+    info.querySelector(".rating1").innerText = e.querySelector(".rating").innerText
+    
+    info.querySelector(".length1").innerText = e.getAttribute(doc.data().length)
+    
+    
 }
