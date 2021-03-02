@@ -58,4 +58,8 @@ window.addEventListener("DOMContentLoaded", addMovies);
 function page(e){
     document.querySelector("#films").style.display = "none"
     document.querySelector("#info").style.display = "grid"
+    console.log(e)
+    info = document.querySelector("#info")
+    info.querySelector(".title1").innerText = e.querySelector("#title").innerText
+    console.log(e)
 }
