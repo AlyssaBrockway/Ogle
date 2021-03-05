@@ -81,10 +81,19 @@ function page(e){
     
 }
 var rooms = ["A","B","C","D","E","F"]
+
 for (i=0;i<rooms.length;i++){
-    
+    var days = ["moday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
     room = document.createElement("div");
     room.classList.add("room");
     
+    for (a=0;a<days.length;a++){
+        db.collection(room[i]).doc(day[i]).get().then(function (querysnapshot){
+            querysnapshot.forEach(async function(doc) {
+                if (doc.id=="none") {}
+                else{}
+            })
+        })        
+    }
     
 }
