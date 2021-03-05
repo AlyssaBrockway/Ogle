@@ -11,8 +11,9 @@ async function addMovies(){
                             .getDownloadURL()
                             .then(async function (url) {
 
-                length = document.querySelector(".length1")
-                length.setAttribute(doc.data().length)                
+                
+                
+
 
                 section = document.createElement("div");
                 section.classList.add("section");
@@ -38,6 +39,10 @@ async function addMovies(){
                 description.innerText = doc.data().description;
                 container.appendChild(description);
                 
+                length = document.createElement("p");
+                length.classList.add("description");
+                length.innerText = doc.data().length;
+                
                 rating = document.createElement("p");
                 rating.classList.add("rating");
                 rating.innerText = doc.data().age;
@@ -62,13 +67,24 @@ function page(e){
     document.querySelector("#info").style.display = "grid"
     
     info = document.querySelector("#info")
+    info.querySelector(".poster1").src = e.querySelector(".poster").src
+
     info.querySelector(".title1").innerText = e.querySelector(".title").innerText
     
     info.querySelector(".description1").innerText = e.querySelector(".description").innerText
     
     info.querySelector(".rating1").innerText = e.querySelector(".rating").innerText
     
-    info.querySelector(".length1").innerText = e.getAttribute(doc.data().length)
+    document.getElementById("info").appendChild(length);
+    info.querySelector(".length1").innerText = e.querySelector(".length").innerText
+    
+    
+}
+var rooms = ["A","B","C","D","E","F"]
+for (i=0;i<rooms.length;i++){
+    
+    room = document.createElement("div");
+    room.classList.add("room");
     
     
 }

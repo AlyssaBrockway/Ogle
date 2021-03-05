@@ -1,9 +1,9 @@
-.trailer {
-  width: 100%;
-}
-
 .info {
   margin: 1em;
+}
+
+.info .poster1 {
+  width: 100%;
 }
 
 .info h2 {

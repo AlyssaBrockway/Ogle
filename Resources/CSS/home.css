@@ -30,8 +30,13 @@
   color: #f18282;
 }
 
+.info {
+  display: none;
+}
+
 .films {
   margin-bottom: 24vh;
+  top: 0;
 }
 
 .section {
