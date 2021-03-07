@@ -76,7 +76,6 @@ function page(e){
     info.querySelector(".rating1").innerText = e.querySelector(".rating").innerText
     
     document.getElementById("info").appendChild(length);
-    info.querySelector(".length1").innerText = e.querySelector(".length").innerText
     
     
 }
