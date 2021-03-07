@@ -90,8 +90,7 @@ for (i=0;i<rooms.length;i++){
     for (a=0;a<days.length;a++){
         db.collection(room[i]).doc(day[i]).get().then(function (querysnapshot){
             querysnapshot.forEach(async function(doc) {
-                if (doc.id=="none") {}
-                else{}
+               
             })
         })        
     }
