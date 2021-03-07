@@ -80,16 +80,18 @@ function page(e){
     
 }
 var rooms = ["A","B","C","D","E","F"]
-
+console.log(rooms)
 for (i=0;i<rooms.length;i++){
-    var days = ["moday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+    var days = ["Moday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     room = document.createElement("div");
     room.classList.add("room");
-    
+    console.log(days)
     for (a=0;a<days.length;a++){
-        db.collection(room[i]).doc(day[i]).get().then(function (querysnapshot){
+        console.log(days)
+        db.collection(room[i]).doc(day[a]).get().then(function (querysnapshot){
             querysnapshot.forEach(async function(doc) {
-               
+               console.log(doc.data())
+               console.log(days)
             })
         })        
     }
