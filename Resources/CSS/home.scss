@@ -55,14 +55,16 @@
     
       
       .title{
-        margin: 0px;
+        margin: 2vw;
         grid-area: title;
       }
-      .discription{
-        width: 50%;
+      .description{
+        margin: 2vw;
         grid-area: description;
       }
-    
+      .rating{
+        margin: 2vw;
+      }
     
   }
   .times{

@@ -10,11 +10,7 @@ async function addMovies(){
                             .child("poster/" + doc.data().photo)
                             .getDownloadURL()
                             .then(async function (url) {
-
-                
-                
-
-
+             
                 section = document.createElement("div");
                 section.classList.add("section");
                 section.setAttribute("onclick","page(this)");
@@ -79,21 +75,4 @@ function page(e){
     
     
 }
-var rooms = ["A","B","C","D","E","F"]
-console.log(rooms)
-for (i=0;i<rooms.length;i++){
-    var days = ["Moday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    room = document.createElement("div");
-    room.classList.add("room");
-    console.log(days)
-    for (a=0;a<days.length;a++){
-        console.log(days)
-        db.collection(room[i]).doc(day[a]).get().then(function (querysnapshot){
-            querysnapshot.forEach(async function(doc) {
-               console.log(doc.data())
-               console.log(days)
-            })
-        })        
-    }
-    
-}
+

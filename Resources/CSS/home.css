@@ -65,17 +65,21 @@
 }
 
 .section .container .title {
-  margin: 0px;
+  margin: 2vw;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: title;
 }
 
-.section .container .discription {
-  width: 50%;
+.section .container .description {
+  margin: 2vw;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: description;
+}
+
+.section .container .rating {
+  margin: 2vw;
 }
 
 .section .times {
